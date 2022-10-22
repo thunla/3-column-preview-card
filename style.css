@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --white-paragraph: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+body{
+    font-size: 15px;
+    /* font-family: 'Big Shoulders Display', cursive; */
+    font-family: 'Lexend Deca', sans-serif; 
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--very-light-gray);
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.card__item{
+    padding: 36px;
+    min-height: 400px;
+}
+.card__item h1{
+    font-family: 'Big Shoulders Display', cursive;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 24px auto;
+    color: var(--very-light-gray);
+}
+.card__item p{
+    color: var(--white-paragraph);
+    font-size: 0.9rem;
+}
+.card__item--sedans{
+    background-color: var(--bright-orange);
+}
+.card__item--suvs{
+    background-color: var(--dark-cyan);
+}
+.card__item--luxury{
+    background-color: var(--very-dark-cyan);
+}
+.card__item a{
+    text-decoration: none;
+    border: 2px solid var(--very-light-gray);
+    background-color: var(--very-light-gray);
+    border-radius: 30px;
+    padding: 12px 24px;
+    font-weight: 700;
+    font-size: 0.8rem;
+    display: block;
+    margin-top: 36px;
+    width: max-content;
+}
+.card__item--sedans a{
+    color: var(--bright-orange);
+}
+.card__item--suvs a{
+    color: var(--dark-cyan);
+}
+.card__item--luxury a{
+    color: var(--very-dark-cyan);
+}
+
+.card__item a:hover{
+    color: var(--very-light-gray);
+    background-color: transparent;
+    border: 2px solid var(--very-light-gray);
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        height: auto;
+    }
+    .card{
+        flex-direction: column;
+        width: 90%;
+        margin: 36px auto;
+    }
+}
