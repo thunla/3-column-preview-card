@@ -20,7 +20,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--very-light-gray);
 }
 .card{
@@ -35,7 +35,7 @@ body{
     padding: 36px;
     min-height: 400px;
 }
-.card__item h1{
+.card__item h4{
     font-family: 'Big Shoulders Display', cursive;
     letter-spacing: 2px;
     text-transform: uppercase;
